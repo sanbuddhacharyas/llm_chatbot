@@ -12,6 +12,8 @@ load_dotenv()
 
 # Define environment
 os.environ['LANGCHAIN_TRACKING_V2'] = "true"
+os.environ['LANGCHAIN_API_KEY']     = os.getenv("LANGCHAIN_API_KEY")
+
 
 # Prompt Template
 prompt = ChatPromptTemplate.from_messages(
